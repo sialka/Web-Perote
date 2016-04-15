@@ -37,8 +37,9 @@
 													
 					</div>
 					<div class="collapse navbar-collapse navbar-right">			
-						<ul class="nav navbar-nav">
-							<li><a href="#home">HOME</a></li>
+						<!-- ul class="nav navbar-nav" -->
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#home">HOME</a></li>
 							<li><a href="#qsomos">QUEM SOMOS</a></li>
 							<li><a href="#solucoes">SOLUÇÕES</a></li>
 							<li><a href="#servicos">SERVIÇOS</a></li>					
@@ -55,26 +56,23 @@
 					<div id="carousel" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="img/0.jpg" alt="Propaganda 1" class="center-block">
+								<img src="img/1.jpg" alt="Propaganda 1" class="center-block">
 							</div>
 							<div class="item">
-								<img src="img/1.jpg" alt="Propaganda 2" class="center-block">
+								<img src="img/2.jpg" alt="Propaganda 2" class="center-block">
 							</div>
 							<div class="item">
-								<img src="img/2.jpg" alt="Propaganda 3" class="center-block">
+								<img src="img/3.jpg" alt="Propaganda 3" class="center-block">
 							</div>
 							<div class="item">
-								<img src="img/3.jpg" alt="Propaganda 4" class="center-block">
+								<img src="img/4.jpg" alt="Propaganda 4" class="center-block">
 							</div>
 							<div class="item">
-								<img src="img/4.jpg" alt="Propaganda 5" class="center-block">
+								<img src="img/5.jpg" alt="Propaganda 5" class="center-block">
 							</div>
 							<div class="item">
-								<img src="img/5.jpg" alt="Propaganda 6" class="center-block">
-							</div>
-							<div class="item">
-								<img src="img/6.jpg" alt="Propaganda 7" class="center-block">
-							</div>
+								<img src="img/6.jpg" alt="Propaganda 6" class="center-block">
+							</div>							
 						</div>	
 						<a href="#carousel" data-slide="prev" class="left carousel-control">
 							<span class="glyphicon glyphicon-chevron-left"></span>
@@ -256,7 +254,7 @@
 	   						</li>
 							<li>
 								<span class="glyphicon glyphicon-paperclip"></span> 
-								<a href="#qsomos">QUEM SOMOS</a>							
+								<a href="#qsomos">QUEM SOMOS</a>					
 							</li>
 							<li>
 								<span class="glyphicon glyphicon-tags"></span>
@@ -285,24 +283,26 @@
 	                
 	                <!-- Contato por email -->
 	                <div class="col-md-4">             
-	                    <h3>Contato por e-mail</h3>
-	                    <div class="form-group">
-	                        <input type="text" class="form-control" placeholder="Informe seu Nome">
-	                    </div>
-	                    <div class="form-group">
-	                        <input type="email" class="form-control" placeholder="Informe seu e-mail">
-	                    </div>
-	                    <div class="form-group">                        
-	                        <input type="text" class="form-control" placeholder="Telefone (11) 9999-9999">
-	                    </div>
-	                    <div class="form-group">
-	                        <label>Mensagem:</label>
-	                        <textarea class="form-control">
-	                        </textarea>
-	                    </div>
-	                    <div class="form-group">
-	                        <button type="submit" class="btn btn-default">Enviar</button>
-	                    </div>
+	                    <form action="envia.php" method="POST">   
+		                    <h3 id="contato">Contato por e-mail</h3>
+		                    <br>
+		                    <div class="form-group">
+		                        <label for="nome">Nome completo</label>
+		                        <input type="text" class="form-control" placeholder="Informe seu Nome" id="nome" name="nome" required pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+
+		                    	<label for="email">E-mail</label>
+		                        <input type="email" id="email" name="email" class="form-control" required placeholder="seu@email.com">
+		                    
+		                    	<label for="telefone">Telefone</label>           
+		                        <input type="text" class="form-control" placeholder="(11) 9999-9999" name="telefone" id="telefone">
+		                    
+		                        <label for="mensagem">Mensagem:</label>
+		                        <textarea class="form-control" name="mensagem" id="mensagem" rows="3" placeholder="Digite aqui sua mensagem" required></textarea>
+		                    </div>
+		                    <div class="form-group">
+		                        <button type="submit" name="enviar" value="Enviar" class="btn btn-default">Enviar</button>
+		                    </div>
+	                	</form>
 	                </div>
                 </div>
 

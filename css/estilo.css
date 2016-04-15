@@ -4,20 +4,37 @@ body {
 .carrossel{
     margin-top: -19px;
 }
-.navbar-header button {
-    color: #fff;    
-}
+/*
 .navbar-nav>li>a {
     margin-top: 23px;    
     color: #333;
-    font-size: 1.4em;
+    font-size: 1.4em;    
 }
+*/
+.nav>li>a {
+    margin-top: 23px;    
+    color: #333;
+    font-size: 1.4em;    
+}
+
+.nav>li>a:hover {
+    background-color: #337ab7;
+    color: white;
+}
+
 .fullscreen {
     width:100%;                 
 }        
 .navbar-header{
     height: 100px;    
+}    
+.navbar{
+    background-color: white;
 }
+.navbar-header button {
+    color: #fff;    
+}
+
 
 .logo{
     display: block;
@@ -122,11 +139,12 @@ ul{
 .menu-rodape>li{
     font-size: 1.6rem;
     color: black;    
+    padding-bottom: 1rem;
 }
 .menu-rodape>li>a{
     font-size: 1.6rem;
     color: black;
-    text-decoration: none;
+    text-decoration: none;    
 }
 .menu-rodape>li>a:hover{        
     font-weight: bolder;
@@ -153,7 +171,9 @@ ul{
 }
 .rodape-final{
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
 }
 
-textarea { resize:none; }
+textarea { 
+    resize:none; 
+}
