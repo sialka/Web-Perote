@@ -1,18 +1,16 @@
 body {
-    font-family: 'Roboto Slab', "Arial", serif;        
+    font-family: 'Roboto Slab', "Arial", serif;
+    //margin-top: 109px;        
 }
 .carrossel{
     margin-top: -19px;
 }
-/*
-.navbar-nav>li>a {
-    margin-top: 23px;    
-    color: #333;
-    font-size: 1.4em;    
+.navbar {
+    border-radius: 0;
+    border-bottom: 4px solid #337ab7;    
 }
-*/
 .nav>li>a {
-    margin-top: 23px;    
+    margin-top: 12px;    
     color: #333;
     font-size: 1.4em;    
 }
@@ -26,7 +24,7 @@ body {
     width:100%;                 
 }        
 .navbar-header{
-    height: 100px;    
+    height: 80px;    
 }    
 .navbar{
     background-color: white;
@@ -34,7 +32,6 @@ body {
 .navbar-header button {
     color: #fff;    
 }
-
 
 .logo{
     display: block;
@@ -136,13 +133,27 @@ ul{
     padding-left: 0;
     line-height: 2.5em;
 }
+/* Icones */
 .menu-rodape>li{
-    font-size: 1.6rem;
-    color: black;    
+    font-size: 1rem;
+    color: #337ab7;
     padding-bottom: 1rem;
 }
+.icone-rede-sociais{    
+    width: 2em;
+}
+
+.icone-rede-sociais:hover {
+    background: white;  
+}
+
+.icone-mail{
+    color: #337ab7;
+    font-size: 1rem;
+}
+   
 .menu-rodape>li>a{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: black;
     text-decoration: none;    
 }
@@ -159,8 +170,7 @@ ul{
     text-decoration: none;    
     color:black;
 }
-.contato a:hover{
-    
+.contato a:hover{    
     color: black;        
     font-weight: bolder;
 }
@@ -176,4 +186,18 @@ ul{
 
 textarea { 
     resize:none; 
+}
+
+.copy{
+    background: black;
+    color: white;
+}
+
+footer{
+    border-top: 1px solid #808080;
+}
+
+footer h4 {
+    margin-top: 1.2em;    
+    color: #800000;
 }
