@@ -24,13 +24,20 @@ body {
     width:100%;                 
 }        
 .navbar-header{
-    height: 80px;    
+    height: 80px;      
 }    
 .navbar{
     background-color: white;
 }
-.navbar-header button {
-    color: #fff;    
+
+/* botão menu */
+.navbar-toggle{
+    border: 1px solid #dadada;  
+    margin-top: 20px;
+}
+span.icon-bar{
+    color: black;
+    border: 1px solid #dadada;
 }
 
 .logo{
@@ -199,5 +206,6 @@ footer{
 
 footer h4 {
     margin-top: 1.2em;    
-    color: #800000;
+    color: #337ab7;
+    font-weight: bold;
 }
